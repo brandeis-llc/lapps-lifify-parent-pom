@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <name>Brandeis LAPPS parent pom</name>
     <description>
-        A parent pom for Brandeis LAPPS Grid applications for LIF-ification. 
+            A parent pom for Brandeis LAPPS Grid applications for LIF-ification. 
     </description>
     <parent>
         <groupId>org.lappsgrid.maven</groupId>
@@ -21,15 +21,15 @@
         <brandeis.nexus.baseurl>http://morbius.cs-i.brandeis.edu:8081</brandeis.nexus.baseurl>
     </properties>
 
-	<scm>
-		<url>https://github.com/brandeis-llc/lapps-lifify-parent-pom</url>
-		<connection>scm:git:https://github.com/brandeis-llc/lapps-lifify-parent-pom.git</connection>
-		<developerConnection>scm:git:git@github.com:brandeis-llc/lapps-lifify-parent-pom.git</developerConnection>
-	</scm>
-	<issueManagement>
-		<url>https://github.com/brandeis-llc/lapps-lifify-parent-pom/issues</url>
-		<system>GitHub issues</system>
-	</issueManagement>
+    <scm>
+        <url>https://github.com/brandeis-llc/lapps-lifify-parent-pom</url>
+        <connection>scm:git:https://github.com/brandeis-llc/lapps-lifify-parent-pom.git</connection>
+        <developerConnection>scm:git:git@github.com:brandeis-llc/lapps-lifify-parent-pom.git</developerConnection>
+    </scm>
+    <issueManagement>
+        <url>https://github.com/brandeis-llc/lapps-lifify-parent-pom/issues</url>
+        <system>GitHub issues</system>
+    </issueManagement>
 
     <pluginRepositories>
         <pluginRepository>
@@ -56,6 +56,18 @@
             <groupId>org.lappsgrid</groupId>
             <artifactId>all</artifactId>
             <version>${lapps.all}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
         </dependency>
     </dependencies>
 
