@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <name>Brandeis LAPPS parent pom</name>
     <description>
-            A parent pom for Brandeis LAPPS Grid applications for LIF-ification. 
+            A parent pom for Brandeis LAPPS Grid applications.
     </description>
     <parent>
         <groupId>org.lappsgrid.maven</groupId>
