@@ -17,7 +17,7 @@
 
 
     <properties>
-        <lapps.all>2.5.0-SNAPSHOT</lapps.all>
+        <lapps.all>2.5.0</lapps.all>
         <brandeis.nexus.baseurl>http://morbius.cs-i.brandeis.edu:8081</brandeis.nexus.baseurl>
     </properties>
 
@@ -56,6 +56,7 @@
         <dependency>
             <groupId>org.lappsgrid</groupId>
             <artifactId>all</artifactId>
+            <type>pom</type>
             <version>${lapps.all}</version>
         </dependency>
         <dependency>
