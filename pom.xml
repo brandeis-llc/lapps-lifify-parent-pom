@@ -3,29 +3,37 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.brandeis.lapps</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <name>Brandeis LAPPS parent pom</name>
-    <description>
-            A parent pom for Brandeis LAPPS Grid applications.
-    </description>
+    <description> A parent pom for Brandeis LAPPS Grid applications.  </description>
     <parent>
         <groupId>org.lappsgrid.maven</groupId>
         <artifactId>parent-pom</artifactId>
         <version>2.2.1</version>
     </parent>
 
-
     <properties>
         <lapps.all>2.5.0</lapps.all>
         <brandeis.nexus.baseurl>http://morbius.cs-i.brandeis.edu:8081</brandeis.nexus.baseurl>
     </properties>
+
+    <developers>
+        <developer>
+            <id>keighrim</id>
+            <name>Keigh Rim</name>
+            <email>krim@brandeis.edu</email>
+            <organization>Lab for Linguistics and Computation, Brandeis University</organization>
+            <organizationUrl>https://www.cs.brandeis.edu/~llc/</organizationUrl>
+        </developer>
+    </developers>
 
     <scm>
         <url>https://github.com/brandeis-llc/lapps-parent-pom</url>
         <connection>scm:git:https://github.com/brandeis-llc/lapps-parent-pom.git</connection>
         <developerConnection>scm:git:git@github.com:brandeis-llc/lapps-parent-pom.git</developerConnection>
     </scm>
+
     <issueManagement>
         <url>https://github.com/brandeis-llc/lapps-parent-pom/issues</url>
         <system>GitHub issues</system>
@@ -33,24 +41,30 @@
 
     <repositories>
         <repository>
-            <id>brandeis-nexus</id>
-            <name>Nexus Repository hosted at Brandeis Computer Science Department</name>
+            <id>brandeis-llc-nexus</id>
             <url>http://morbius.cs-i.brandeis.edu:8081/repository/maven-public</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
-            <id>brandeis-nexus</id>
+            <id>brandeis-llc-nexus</id>
             <name>Releases</name>
             <url>${brandeis.nexus.baseurl}/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>brandeis-nexus</id>
+            <id>brandeis-llc-nexus</id>
             <name>Snapshot</name>
             <url>${brandeis.nexus.baseurl}/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 
     <dependencies>
         <dependency>
